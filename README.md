@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# 🪑 SJL Muebles
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicación web de catálogo de muebles desarrollada como trabajo práctico de la diplomatura en desarrollo web.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tecnologías utilizadas
 
-### `npm start`
+### Frontend
+- React
+- CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Backend
+- Node.js
+- Express
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Base de datos
+- MongoDB Atlas
 
-### `npm test`
+### Otros
+- Cloudinary (para imágenes)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Funcionalidades
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Ver catálogo de productos
+- Crear productos
+- Editar productos
+- Eliminar productos
+- Asociar productos a categorías
+- Visualizar categorías en el frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🗄️ Esquema de Base de Datos
 
-### `npm run eject`
+### Product
+- name: String
+- description: String
+- price: Number
+- stock: Number
+- image: String
+- category: ObjectId (referencia a Category)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Category
+- name: String
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🔗 Endpoints
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Productos
+- GET /products → obtener todos los productos
+- POST /products → crear producto
+- PUT /products/:id → actualizar producto
+- DELETE /products/:id → eliminar producto
 
-## Learn More
+### Categorías
+- GET /categories → obtener categorías
+- POST /categories → crear categoría
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ▶️ Cómo ejecutar el proyecto
 
-### Code Splitting
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd backend
+node app.js
 
-### Analyzing the Bundle Size
+frontend
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Ejemplo de request POST
+{
+  "name": "Mesa industrial",
+  "description": "Mesa de madera y hierro",
+  "price": 100,
+  "stock": 5,
+  "image": "https://res.cloudinary.com/...",
+  "category": "ID_DE_CATEGORIA"
+}
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Autor Gonzalo Otero

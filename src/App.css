@@ -110,7 +110,15 @@
   /* Aseguramos que el contenido no se desborde */
   box-sizing: border-box;
 }
-
+.product-category {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
 @media (max-width: 600px) {
   .header-container {
     /* En celulares reducimos un poco el aire lateral para que entre todo */
