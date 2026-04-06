@@ -1,10 +1,10 @@
-# 🪑 SJL Muebles
+# SJL Muebles
 
 Aplicación web de catálogo de muebles desarrollada como trabajo práctico de la diplomatura en desarrollo web.
 
 ---
 
-## 🚀 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 ### Frontend
 - React
@@ -22,7 +22,7 @@ Aplicación web de catálogo de muebles desarrollada como trabajo práctico de l
 
 ---
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Ver catálogo de productos
 - Crear productos
@@ -33,7 +33,7 @@ Aplicación web de catálogo de muebles desarrollada como trabajo práctico de l
 
 ---
 
-## 🗄️ Esquema de Base de Datos
+## Esquema de Base de Datos
 
 ### Product
 - name: String
@@ -48,7 +48,7 @@ Aplicación web de catálogo de muebles desarrollada como trabajo práctico de l
 
 ---
 
-## 🔗 Endpoints
+## Endpoints
 
 ### Productos
 - GET /products → obtener todos los productos
