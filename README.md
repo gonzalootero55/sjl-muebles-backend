@@ -59,6 +59,7 @@ npm start
 
 ### Ejemplo de request POST
 
+```bash
 {
 "name": "Mesa industrial",
 "description": "Mesa de madera y hierro",
@@ -67,7 +68,7 @@ npm start
 "image": "https://res.cloudinary.com/dnfuhp0s1/image/upload/v1775487593/4_yd7llu.jpg",
 "category": "ID_DE_CATEGORIA"
 }
-
+```
 ### Autor
 
 Gonzalo Otero
